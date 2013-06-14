@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>Your current point balance</source>
+        <target>現在のポイント数</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Items to exchange your points</source>
+        <target>景品一覧</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Exchange your points to the item</source>
+        <target>景品と交換する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Exchange item</source>
+        <target>交換するアイテム</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Pref</source>
+        <target>郵便番号</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Address</source>
+        <target>住所</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Tel</source>
+        <target>電話番号</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Real name</source>
+        <target>本名</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Address to ship</source>
+        <target>届け先</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Change Member Point</source>
+        <target>メンバーのポイント変更</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Recent point history of this member</source>
+        <target>このメンバーの最近のポイント履歴</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Point Configuration</source>
+        <target>ポイント設定</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Member Point</source>
+        <target>メンバーポイント一覧</target>
+      </trans-unit>     
+      <trans-unit id="">
+        <source>Is active</source>
+        <target>有効/無効</target>
+      </trans-unit>     
+      <trans-unit id="">
+        <source>Is input address</source>
+        <target>住所を入力させる</target>
+      </trans-unit>     
+      <trans-unit id="">
+        <source>Completed a application of point exchange</source>
+        <target>景品の交換申請を送信しました。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Point balance</source>
+        <target>ポイント残高</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Are you sure to get this item for your %order_points% points?</source>
+        <target>%order_points% ポイントでこの景品と交換しますか？</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Address to ship</source>
+        <target>配達先</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your point history</source>
+        <target>ポイント履歴</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>My Point</source>
+        <target>現在ポイント</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Point: %point%</source>
+        <target>現在 %point% ポイント</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>See detail history</source>
+        <target>ポイント履歴を見る</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Exchange some items</source>
+        <target>景品と交換する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>You do not have enough balance points.</source>
+        <target>ポイント残高が足りません。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Image</source>
+        <target>景品画像</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Item description</source>
+        <target>説明</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Use points</source>
+        <target>使用ポイント</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>After your point balance</source>
+        <target>交換後ポイント残高</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

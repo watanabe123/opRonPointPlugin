@@ -1,0 +1,25 @@
+point_history:
+  url: /point/history
+  param: { module: point, action: history }
+
+point_exchange:
+  url: /pointExchange
+  param: { module: pointExchange, action: itemList }
+
+pointExchange_do:
+  url: /pointExchange/:id/do
+  class: sfDoctrineRoute
+  options: { model: PointItem, type: object }
+  param: { module: pointExchange, action: do }
+  requirements:
+    id: \d+
+    sf_method: [post]
+
+pointExchange_form:
+  url: /pointExchange/:id
+  class: sfDoctrineRoute
+  options: { model: PointItem, type: object }
+  param: { module: pointExchange, action: form }
+  requirements:
+    id: \d+
+    sf_method: [get, post]

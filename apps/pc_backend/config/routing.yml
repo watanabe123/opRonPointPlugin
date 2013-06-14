@@ -1,0 +1,54 @@
+op_point_point_configure:
+  url: /opRonPointPlugin
+  param: { module: opRonPointPlugin, action: pointConfigure }
+
+op_point_member_point:
+  url: /opRonPointPlugin/memberPoint
+  param: { module: opRonPointPlugin, action: memberPoint }
+
+op_point_edit_member_point:
+  class: sfDoctrineRoute
+  url: /opRonPointPlugin/editMemberPoint/:id
+  param: { module: opRonPointPlugin, action: editMemberPoint }
+  requirements: { id: '\d+', sf_method: [get] }
+  options: { model: Member, type: object }
+
+op_point_update_member_point:
+  class: sfDoctrineRoute
+  url: /opRonPointPlugin/updateMemberPoint/:id
+  param: { module: opRonPointPlugin, action: updateMemberPoint }
+  requirements: { id: '\d+', sf_method: [post] }
+  options: { model: Member, type: object }
+
+op_point_add_item:
+  url: /opRonPointPlugin/addItem
+  param: { module: opRonPointPlugin, action: addItem }
+
+op_point_list_item:
+  url: /opRonPointPlugin/listItem
+  param: { module: opRonPointPlugin, action: listItem }
+
+op_point_edit_item:
+  class: sfDoctrineRoute
+  url: /opRonPointPlugin/editItem/:id
+  param: { module: opRonPointPlugin, action: editItem }
+  requirements: { id: '\d+', sf_method: [get, post, put] }
+  options: { model: PointItem, type: object }
+
+op_point_delete_confirm_item:
+  class: sfDoctrineRoute
+  url: /opRonPointPlugin/deleteConfirmItem/:id
+  param: { module: opRonPointPlugin, action: deleteConfirmItem }
+  requirements: { id: '\d+', sf_method: [get] }
+  options: { model: PointItem, type: object }
+
+op_point_delete_item:
+  class: sfDoctrineRoute
+  url: /opRonPointPlugin/deleteItem/:id
+  param: { module: opRonPointPlugin, action: deleteItem }
+  requirements: { id: '\d+', sf_method: [post, put] }
+  options: { model: PointItem, type: object }
+
+op_point_nodefault:
+  url: /opRonPointPlugin/*
+  param: { module: default, action: error }

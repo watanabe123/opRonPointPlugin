@@ -1,0 +1,37 @@
+#core
+#create_community:
+#  caption: "コミュニティの作成"
+#  event: "op_action.post_execute_community_edit"
+#
+member_invite:
+  caption: "メンバーの招待"
+  event: "op_action.post_execute_opAuthMailAddress_registerEnd"
+
+member_introfriend:
+  caption: "メンバーの紹介文投稿"
+  event: "op_action.post_execute_introfriend_index"
+  check: "redirect"
+  limit: true
+
+member_friend:
+  caption: "フレンド申請許可による加算"
+  event: "op_action.post_execute_confirmation_decision"
+
+member_login:
+  caption: "ログインによる加算"
+  event: "op_action.post_execute"
+  limit: true
+
+#diary (opDiaryPlugin)
+post_diary:
+  caption: "日記の投稿"
+  event: "op_action.post_execute_diary_create"
+  check: "redirect"
+  limit: true
+
+post_diary_comment:
+  caption: "日記コメントの投稿"
+  event: "op_action.post_execute_diaryComment_create"
+  check: "redirect"
+  limit: true
+

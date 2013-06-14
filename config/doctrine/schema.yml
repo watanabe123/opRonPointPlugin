@@ -1,0 +1,37 @@
+PointSetting:
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    module: { type: string(100) }
+    action: { type: string(100) }
+    caption: { type: string(255) }
+    points: { type: integer(1) }
+
+Point:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    member_id: { type: integer(4), notnull: true }
+    points: { type: integer(4), default: 0 }
+    rest_points: { type: integer(4), default: 0 }
+    expires_at: { type: date, default: null }
+    event: { type: string(100), default: null }
+    foreign_table: { type: string(100) }
+    foreign_id: { type: integer }
+    memo: { type: string }
+  relations:
+    Member:
+      onDelete: cascade
+
+PointItem:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer, primary: true, autoincrement: true }
+    file_id: { type: integer(4) }
+    name: { type: string(255) }
+    points: { type: integer(4) }
+    description: { type: string }
+    is_active: { type: boolean }
+    is_input_address: { type: boolean }
+  relations:
+    File:
+      onDelete: cascade

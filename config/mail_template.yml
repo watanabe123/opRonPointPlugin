@@ -1,0 +1,27 @@
+pc:
+  notityMemberExchange:
+    caption: "ポイント景品交換申請メール"
+    configurable: true
+    sample:
+      ja_JP:
+        - "ポイント景品交換申請メール"
+        - |
+          SNSユーザーからポイント景品の交換申請が届いています。
+
+          ■ メンバー情報
+          {{ member_name }} さん ({% app_url_for('pc_frontend', 'member/profile?id='~member_id, true) %})
+
+          ■ 交換景品
+          {{ item_id }} - {{ item_name }}
+          
+          {% if address %}
+          ■ 届け先情報
+          {{ address }} 
+          {% endif %}
+          
+    variables:
+      member_name: "メンバーの名前"
+      member_id: "メンバーID"
+      item_id: "アイテムID"
+      item_name: "アイテムの名前"
+      address: "住所"
